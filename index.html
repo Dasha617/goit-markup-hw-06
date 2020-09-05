@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+
+    <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
     <!---Шапка сайта-->
@@ -64,8 +64,8 @@
     <div class="pickcha">
     <section class="container">
          <div >
-          <h1 class="heading" >Эффективные решения <br/> для вашего бизнеса</h1>
-          <button class="button primary" type="button" data-modal-open=>Заказать услугу</button>
+          <h1 class="heading">Эффективные решения <br/> для вашего бизнеса</h1>
+          <button class="button" type="button" data-modal-open>Заказать услугу</button>
           
          </div>
     </section>
@@ -398,8 +398,14 @@
        
     <div class="add-forma">
          <h3 class="address">подпишитесь на рассылку</h3>
-         <input type="email" placeholder="e-mail"/>
-         <input  type="button" value="Подписаться" />
+         <form class="form-footer"> 
+         <input class="input-footer" type="email" placeholder="e-mail"/>
+         <button class="btn btn-footer" type="submit"><span>Подписаться</span>
+            <svg class="icon-footer" widht="24" height="24">
+               <use href="./img/icon/symbol-defsfooter.svg#icon-iconfooter"></use>
+            </svg>
+         </button>
+      </form>
     </div> 
       </footer>
 
@@ -410,10 +416,12 @@
 
      
 
-     <div class="backdrop" data-modal="">
+     <div class="backdrop is-hidden" data-modal="">
      <div class="modal">
       <button class="close-button" href="./index.html" data-modal-close>
-         <img src="./img/close(1).svg" alt="close"> 
+         <svg class="icon-close">
+            <use href="./img/icon/symbol-defsclose.svg#icon-close"></use>
+         </svg> 
       </button>
          
    <!--форма-->
@@ -453,7 +461,11 @@
       
       <label class="check-lable" for="rules">
       <input class="input-check" type="checkbox" name="" value="" id="rules"/>
-      <span class="checkbox-icon"></span>
+      <span class="checkbox-icon">
+         <svg class="icon-check">
+            <use href="./img/icon/symbol-defscheck.svg#icon-check"></use>
+         </svg>
+      </span>
       <span class="check-text">Соглашаюсь с рассылкой и принимаю <a class="check-link" href="">Условия договора</a></span> </label>
       </label>
       
